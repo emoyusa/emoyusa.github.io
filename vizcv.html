@@ -44,6 +44,57 @@ Co-Authors</B></FONT></P>
 <P ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4><B>My
 Publications by Journal Impact Factor</B></FONT></P>
 <P ALIGN=CENTER STYLE="margin-bottom: 0in"><IMG SRC="/images/viscv_html_m6cf9b591.png" NAME="graphics4" ALIGN=CENTER WIDTH=665 HEIGHT=323 BORDER=0><BR CLEAR=LEFT><BR>
+
+    <script type="text/javascript" 
+
+src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart() {
+
+  var data = google.visualization.arrayToDataTable([
+    ['Year', 'High (>10)', 'Medium (1-10)', 'Low (<1)'],
+['1985',	1,	0,	0],
+['1987',	0,	1,	0],
+['1993',	1,	0,	1],
+['1995',	2,	0,	0],
+['1996',	0,	4,	1],
+['1997',	1,	1,	1],
+['1998',	1,	1,	2],
+['2000',	2,	1,	0],
+['2001',	1,	1,	0],
+['2003',	0,	1,	0],
+['2004',	0,	2,	0],
+['2005',	2,	10,	1],
+['2006',	0,	2,	5],
+['2007',	0,	0,	1],
+['2008',	0,	1,	0],
+['2010',	0,	2,	0],
+['2011',	0,	2,	1],
+['2012',	0,	1,	0],
+['2013',	0,	1,	2],
+['2014',	0,	1,	0]
+  ]);
+
+  var options = {
+    vAxis: {title:'No. of Publications'},
+    hAxis: {title: 'Year'},
+        isStacked:true
+  };
+
+  var chart = new google.visualization.ColumnChart
+
+(document.getElementById('chart_div'));
+
+  chart.draw(data, options);
+
+}
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+
 </P><a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Comments or Contact</h3>
 
 <p>If you have comments or suggestions, send them to me at <a href="mailto:emoyusa@gmail.com">emoyusa@gmail.com</a></p>
