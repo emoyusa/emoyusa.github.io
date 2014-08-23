@@ -5,12 +5,12 @@
   "logo": {
     "text": "Emoyusa",
     "file": "",
-    "link": "www"
+    "link": "emoyusa.github.io"
   },
   "text": {
     "title": "My Professional Development Sites",
-    "more": "long description",
-    "intro": "short description"
+    "more": "Tracks my education, training, and work experience geographically.  Note that time flows clockwise.",
+    "intro": "Places that made me."
   },
   "legend": {
     "edgeLabel": "Moves",
