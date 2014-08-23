@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "text": "Emoyusa",
+    "file": "",
+    "link": "emoyusa.github.io"
+  },
+  "text": {
+    "title": "My Co-Authors",
+    "more": "Summarizes my co-authors on peer-reviewed papers.",
+    "intro": "People that made me."
+  },
+  "legend": {
+    "edgeLabel": "Co-Authorship",
+    "colorLabel": "Degree",
+    "nodeLabel": "Colleagues"
+  },
+  "features": {
+    "search": false,
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "imageAttribute": "Label",
+    "groupByEdgeDirection": false
+  },
+  "sigma": {
+    "graphProperties": {
+      "minEdgeSize": 5,
+      "maxNodeSize": 25,
+      "maxEdgeSize": 25,
+      "minNodeSize": 5
+    },
+    "drawingProperties": {
+      "labelThreshold": 0,
+      "hoverFontStyle": "bold",
+      "defaultEdgeType": "curve",
+      "defaultLabelColor": "#000",
+      "defaultLabelHoverColor": "#fff",
+      "defaultLabelSize": 14,
+      "activeFontStyle": "bold",
+      "fontStyle": "bold",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd"
+    },
+    "mouseProperties": {
+      "minRatio": 0.75,
+      "maxRatio": 20
+    }
+  }
+}
