@@ -8,14 +8,14 @@
     "link": "www"
   },
   "text": {
-    "title": "My Places of Professional Development",
+    "title": "My Professional Development Sites",
     "more": "long description",
     "intro": "short description"
   },
   "legend": {
     "edgeLabel": "Moves",
     "colorLabel": "Education/Work",
-    "nodeLabel": "Places"
+    "nodeLabel": "Sites"
   },
   "features": {
     "search": false,
