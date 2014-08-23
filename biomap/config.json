@@ -1,0 +1,52 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "text": "Emoyusa",
+    "file": "",
+    "link": "www"
+  },
+  "text": {
+    "title": "My Places of Professional Development",
+    "more": "long description",
+    "intro": "short description"
+  },
+  "legend": {
+    "edgeLabel": "Moves",
+    "colorLabel": "Education/Work",
+    "nodeLabel": "Places"
+  },
+  "features": {
+    "search": false,
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "imageAttribute": "Label",
+    "groupByEdgeDirection": false
+  },
+  "sigma": {
+    "graphProperties": {
+      "minEdgeSize": 15,
+      "maxNodeSize": 30,
+      "maxEdgeSize": 15,
+      "minNodeSize": 30    },
+    "drawingProperties": {
+      "labelThreshold": 0,
+      "hoverFontStyle": "bold",
+      "defaultEdgeType": "curve",
+      "defaultLabelColor": "#000",
+      "defaultLabelHoverColor": "#fff",
+      "defaultLabelSize": 20,
+      "activeFontStyle": "bold",
+      "fontStyle": "bold",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd"
+    },
+    "mouseProperties": {
+      "minRatio": 0.75,
+      "maxRatio": 20
+    }
+  }
+}
