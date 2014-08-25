@@ -1,0 +1,443 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.0  (Win32)">
+	<META NAME="CREATED" CONTENT="20140823;10450411">
+	<META NAME="CHANGED" CONTENT="20140824;20274841">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 0.79in }
+		P { margin-bottom: 0.08in }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4><B>How to
+Make a Visual CV</B></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in">Getting data: You will need two
+	pieces of information.</P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-bottom: 0in">List of your sites of education,
+		training, work, etc. for My Professional Development Sites</P>
+		<LI><P STYLE="margin-bottom: 0in">List of your publications for
+		other sections.  [<B>Tip</B>: Since we will manipulate in a
+		spreadsheet, one way to get a PubMed search into a spreadsheet
+		easily is to use Flink
+		(<A HREF="http://nnlm.gov/pnr/dragonfly/2010/11/10/flink-a-new-way-to-save-pubmed-search-results/">http://nnlm.gov/pnr/dragonfly/2010/11/10/flink-a-new-way-to-save-pubmed-search-results/</A>)]</P>
+	</OL>
+</OL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL START=2>
+	<LI><P STYLE="margin-bottom: 0in">You already know how to do this:
+	Generating My Publications by Journal Impact Factor using
+	spreadsheet</P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-bottom: 0in">Look up Journal Impact Factors
+		(<A HREF="http://www.citefactor.org/journal-impact-factor-list-2014.html">http://www.citefactor.org/journal-impact-factor-list-2014.html</A>)
+		and input on publication list</P>
+		<LI><P STYLE="margin-bottom: 0in">Categorize impact factors as
+		desired [<B>Warning</B><SPAN STYLE="font-weight: normal">: No
+		health services research journals over ~5.5 while even 3</SPAN><SUP><SPAN STYLE="font-weight: normal">rd</SPAN></SUP><SPAN STYLE="font-weight: normal">
+		rate medical journals are over 10]</SPAN></P>
+		<LI><P STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: normal">Create
+		pivot chart of impact factors by PubDate(Year) [For interactive
+		chart, go to 6. below]</SPAN></P>
+		<LI><P STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: normal">Create
+		stacked bar chart</SPAN></P>
+		<LI><P STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: normal">Save
+		or Screenshot as Picture and Crop and Resize to look nice</SPAN></P>
+	</OL>
+</OL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL START=3>
+	<LI><P STYLE="margin-bottom: 0in">Easy to Do: Generating Word Cloud
+	of Publication Titles using Wordle</P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-bottom: 0in">Go to Wordle:
+		<A HREF="http://www.wordle.net/create">http://www.wordle.net/create</A>
+				</P>
+		<LI><P STYLE="margin-bottom: 0in">Copy and Paste paper titles from
+		pub list into Wordle input box</P>
+		<LI><P STYLE="margin-bottom: 0in">Press Go and Run Java</P>
+		<LI><P STYLE="margin-bottom: 0in">Press Randomize until it looks
+		the way you want (or use Options I am too lazy to learn)</P>
+		<LI><P STYLE="margin-bottom: 0in">Save Screenshot as Picture and
+		Crop and Resize to look nice</P>
+	</OL>
+</OL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL START=4>
+	<LI><P STYLE="margin-bottom: 0in; page-break-before: always">Medium:
+	Generating My Professional Development Sites using Gephi</P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-bottom: 0in">Install 
+		</P>
+		<OL TYPE=i>
+			<LI><P STYLE="margin-bottom: 0in">Gephi (<A HREF="https://gephi.github.io/">https://gephi.github.io/</A>)</P>
+			<LI><P STYLE="margin-bottom: 0in">Plugins for GeoLayout and
+			NoverlapLayout (Tools &rarr; Plugins &rarr; Available Plugins &rarr;
+			Install)</P>
+		</OL>
+		<LI><P STYLE="margin-bottom: 0in">Network Node Table (Sites)</P>
+		<OL TYPE=i>
+			<LI><P STYLE="margin-bottom: 0in">Input sites in order in
+			spreadsheet and label column as Label</P>
+			<LI><P STYLE="margin-bottom: 0in">Give each site an id number (1
+			to N) and label column as Id</P>
+			<LI><P STYLE="margin-bottom: 0in">Look up latitude and longitude
+			of each site (<A HREF="http://www.findlatitudeandlongitude.com/">http://www.findlatitudeandlongitude.com/</A>)
+			and input on sheet; label columns as Latitude and Longitude</P>
+			<LI><P STYLE="margin-bottom: 0in">If you want to categorize sites,
+			input categories as numbers and label column as Modularity Class</P>
+			<LI><P STYLE="margin-bottom: 0in">Save as .csv</P>
+		</OL>
+		<LI><P STYLE="margin-bottom: 0in">Network Edge Table (Moves)</P>
+		<OL TYPE=i>
+			<LI><P STYLE="margin-bottom: 0in">Make copy of Network Node Table
+			and change label of id numbers to Source; this is where you move
+			from in each row</P>
+			<LI><P STYLE="margin-bottom: 0in">Insert new column of id number
+			of sites you move to (probably Source + 1) and label as Target</P>
+			<LI><P STYLE="margin-bottom: 0in">Insert new column and give new
+			id numbers (1001 to N); label as Id</P>
+			<LI><P STYLE="margin-bottom: 0in">Save as .csv</P>
+		</OL>
+		<LI><P STYLE="margin-bottom: 0in">Import into Gephi</P>
+		<OL TYPE=i>
+			<LI><P STYLE="margin-bottom: 0in">Start as File &rarr; New Project</P>
+			<LI><P STYLE="margin-bottom: 0in">Node Table</P>
+			<OL TYPE=A>
+				<LI><P STYLE="margin-bottom: 0in">In center view, Data Table &rarr;
+				Import Spreadsheet &rarr; Browse to .csv file for sites</P>
+				<LI><P STYLE="margin-bottom: 0in">Set As table: to Nodes Table
+				and Press Next</P>
+				<LI><P STYLE="margin-bottom: 0in">Set Latitude and Longitude
+				format as Double and Modularity Class format as Integer; Press
+				Finish</P>
+			</OL>
+			<LI><P STYLE="margin-bottom: 0in">Edge Table</P>
+			<OL TYPE=A>
+				<LI><P STYLE="margin-bottom: 0in">In center view, Data Table &rarr;
+				Import Spreadsheet &rarr; Browse to .csv file for moves</P>
+				<LI><P STYLE="margin-bottom: 0in">Set As table: to Edges Table
+				and Press Next; don't need to change variable formats so Press
+				Finish</P>
+			</OL>
+		</OL>
+		<LI><P STYLE="margin-bottom: 0in">Make network diagram: In center
+		view, pick Graph 
+		</P>
+		<OL TYPE=i>
+			<LI><P STYLE="margin-bottom: 0in">If you categorized sites, in
+			left top, pick Ranking &rarr; Nodes &rarr; pick rank parameter as
+			Modularity Class and Press Apply</P>
+			<LI><P STYLE="margin-bottom: 0in">In left bottom Layout, pick Geo
+			Layout and Press Run</P>
+			<LI><P STYLE="margin-bottom: 0in">In center view, scroll to adjust
+			size and tweak as desired</P>
+			<OL TYPE=A>
+				<LI><P STYLE="margin-bottom: 0in">Center view bottom button
+				towards left can Show Node Labels</P>
+				<LI><P STYLE="margin-bottom: 0in">Edge weight scale slider
+				adjusts size of arrows and lines</P>
+				<LI><P STYLE="margin-bottom: 0in">Font size scale slider adjusts
+				font size</P>
+			</OL>
+			<LI><P STYLE="margin-bottom: 0in">In Layout, pick Noverlap and
+			Press Run to prevent Nodes from overlapping</P>
+			<LI><P STYLE="margin-bottom: 0in">In Layout, pick Label Adjust and
+			Press Run to prevent Labels from overlapping</P>
+		</OL>
+		<LI><P STYLE="margin-bottom: 0in">Save Screenshot OR [For
+		interactive chart, go to 7. below]</P>
+		<OL TYPE=i>
+			<LI><P STYLE="margin-bottom: 0in">In top, Press Preview and then
+			in left view towards bottom, Press Refresh</P>
+			<LI><P STYLE="margin-bottom: 0in">Tweak with options of left as
+			desired [<B>Tip</B><SPAN STYLE="font-weight: normal">: Uncheck
+			Edges/Curved to show arrows; not self-evident to me that processes
+			flow clockwise]</SPAN></P>
+			<LI><P STYLE="margin-bottom: 0in">Save as File &rarr; Export &rarr;
+			.png (or other format if preferred)</P>
+		</OL>
+	</OL>
+</OL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL START=5>
+	<LI><P STYLE="margin-bottom: 0in; page-break-before: always">Medium:
+	Generating My Co-Authors using Gephi</P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-bottom: 0in">Install 
+		</P>
+		<OL TYPE=i>
+			<LI><P STYLE="margin-bottom: 0in">Gephi (<A HREF="https://gephi.github.io/">https://gephi.github.io/</A>)</P>
+			<LI><P STYLE="margin-bottom: 0in">Plugins for NoverlapLayout
+			(Tools &rarr; Plugins &rarr; Available Plugins &rarr; Install)</P>
+		</OL>
+		<LI><P STYLE="margin-bottom: 0in">Network Node Table (Colleagues)</P>
+		<OL TYPE=i>
+			<LI><P STYLE="margin-bottom: 0in">Input first authors in
+			spreadsheet and label column as Label</P>
+			<LI><P STYLE="margin-bottom: 0in">Give each author an id number (1
+			to N) and label column as Id</P>
+			<LI><P STYLE="margin-bottom: 0in">If you want to categorize
+			authors, input categories as numbers and label column as
+			Modularity Class</P>
+			<LI><P STYLE="margin-bottom: 0in">Save as .csv</P>
+		</OL>
+		<LI><P STYLE="margin-bottom: 0in">Network Edge Table
+		(Co-Authorship)</P>
+		<OL TYPE=i>
+			<LI><P STYLE="margin-bottom: 0in">Input first authors of each
+			paper and label column as Source</P>
+			<LI><P STYLE="margin-bottom: 0in">Input authors linked to each
+			first author on a paper and label column as Target</P>
+			<LI><P STYLE="margin-bottom: 0in">If desired, insert column with
+			Weight of each first author- other author relationship on a paper
+			(I weighted 2<SUP>nd</SUP> authors at 3, 3<SUP>rd</SUP> authors at
+			2, and others at 1)</P>
+			<LI><P STYLE="margin-bottom: 0in">Insert column with id numbers
+			(1001 to N) and label column as Id</P>
+			<LI><P STYLE="margin-bottom: 0in">Save as .csv</P>
+		</OL>
+		<LI><P STYLE="margin-bottom: 0in">Import into Gephi</P>
+		<OL TYPE=i>
+			<LI><P STYLE="margin-bottom: 0in">Start as File &rarr; New Project</P>
+			<LI><P STYLE="margin-bottom: 0in">Node Table</P>
+			<OL TYPE=A>
+				<LI><P STYLE="margin-bottom: 0in">In center view, Data Table &rarr;
+				Import Spreadsheet &rarr; Browse to .csv file for sites</P>
+				<LI><P STYLE="margin-bottom: 0in">Set As table: to Nodes Table
+				and Press Next</P>
+				<LI><P STYLE="margin-bottom: 0in">Set Modularity Class format as
+				Integer; Press Finish</P>
+			</OL>
+			<LI><P STYLE="margin-bottom: 0in">Edge Table</P>
+			<OL TYPE=A>
+				<LI><P STYLE="margin-bottom: 0in">In center view, Data Table &rarr;
+				Import Spreadsheet &rarr; Browse to .csv file for moves</P>
+				<LI><P STYLE="margin-bottom: 0in">Set As table: to Edges Table
+				and Press Next; don't need to change variable formats so Press
+				Finish</P>
+			</OL>
+		</OL>
+		<LI><P STYLE="margin-bottom: 0in">Make network diagram: In center
+		view, pick Graph 
+		</P>
+		<OL TYPE=i>
+			<LI><P STYLE="margin-bottom: 0in">If you weighted co-authorship,
+			pick Ranking &rarr; Edges &rarr; pick rank parameter as Weight and
+			Press Apply</P>
+			<LI><P STYLE="margin-bottom: 0in">In Ranking &rarr; Nodes &rarr;
+			pick rank parameter as Degree and Press Apply; then, Press
+			Size/Weight jewel and Apply</P>
+			<LI><P STYLE="margin-bottom: 0in">In left bottom Layout, pick
+			Force Atlas, set Repulsion Strength to 10000, and Press Run</P>
+			<LI><P STYLE="margin-bottom: 0in">In center view, scroll to adjust
+			size and tweak as desired</P>
+			<OL TYPE=A>
+				<LI><P STYLE="margin-bottom: 0in">Center view bottom button
+				towards left can Show Node Labels</P>
+				<LI><P STYLE="margin-bottom: 0in">Edge weight scale slider
+				adjusts size of arrows and lines</P>
+				<LI><P STYLE="margin-bottom: 0in">Font size scale slider adjusts
+				font size</P>
+			</OL>
+			<LI><P STYLE="margin-bottom: 0in">In Layout, pick Noverlap and
+			Press Run to prevent Nodes from overlapping</P>
+			<LI><P STYLE="margin-bottom: 0in">In Layout, pick Label Adjust and
+			Press Run to prevent Labels from overlapping</P>
+		</OL>
+		<LI><P STYLE="margin-bottom: 0in">Save Screenshot OR [For
+		interactive chart, go to 7. below]</P>
+		<OL TYPE=i>
+			<LI><P STYLE="margin-bottom: 0in">In top, Press Preview and then
+			in left view towards bottom, Press Refresh</P>
+			<LI><P STYLE="margin-bottom: 0in">Tweak with options of left as
+			desired [<B>Tip</B><SPAN STYLE="font-weight: normal">: Uncheck
+			Edges/Curved to show arrows; not self-evident to me that processes
+			flow clockwise]</SPAN></P>
+			<LI><P STYLE="margin-bottom: 0in">Save as File &rarr; Export &rarr;
+			.png (or other format if preferred)</P>
+		</OL>
+	</OL>
+	<LI><P STYLE="margin-bottom: 0in; page-break-before: always">Advanced:
+	Generating Interactive My Publications by Journal Impact Factor
+	using Google Charts [continuing from 2.(c) above]</P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-bottom: 0in">Insert data and edit options in
+		html text below using Notepad; insert html text in to target
+		webpage:</P>
+	</OL>
+</OL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">&lt;html&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  &lt;head&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    &lt;script
+type=&quot;text/javascript&quot;
+src=&quot;https://www.google.com/jsapi&quot;&gt;&lt;/script&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    &lt;script
+type=&quot;text/javascript&quot;&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">     
+google.load(&quot;visualization&quot;, &quot;1&quot;,
+{packages:[&quot;corechart&quot;]});</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">google.setOnLoadCallback(drawChart);</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">function
+drawChart() {</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  var data =
+google.visualization.arrayToDataTable([</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    ['Year', 'High
+(&gt;10)', 'Medium (1-10)', 'Low (&lt;1)'], &lt;!-- Edit column
+labels--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">['1985',		1,	0,	0],</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">&lt;!--Insert Your
+Data Here--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">['2014'	,	0,	1,	0]</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  ]);</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  var options = {</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    vAxis:
+{title:'No. of Publications'}, &lt;!--Edit chart title--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    hAxis: {title:
+'Year'}, &lt;!--Edit horizontal axis label--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">       
+isStacked:true &lt;--For regular bar chart, set to false--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  };</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  var chart = new
+google.visualization.ColumnChart(document.getElementById('chart_div'));</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  chart.draw(data,
+options);</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">}</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    &lt;/script&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  &lt;/head&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  &lt;body&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    &lt;div
+id=&quot;chart_div&quot; style=&quot;width: 900px; height:
+500px;&quot;&gt;&lt;/div&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  &lt;/body&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">&lt;/html&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL START=7>
+	<LI><P STYLE="margin-bottom: 0in; page-break-before: always">Advanced:
+	Generating Interactive Gephi Output [continuing from 4.(f) or 5.(f)
+	above]</P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-bottom: 0in">Install Gephi Plugins for
+		SigmaExporter (Tools &rarr; Plugins &rarr; Available Plugins &rarr;
+		Install)</P>
+		<LI><P STYLE="margin-bottom: 0in">File &rarr; Export &rarr;
+		Sigma.js template [This saves folder with all files needed for
+		interactive.]</P>
+		<LI><P STYLE="margin-bottom: 0in">If map, open
+		/js/sigma/sigma.parseJson.js using Notepad and insert
+		&ldquo;data.nodes[i].y=-data.nodes[i].y;&rdquo; after &ldquo;var
+		id=data.nodes[i].id;&rdquo; [otherwise, map will be upside down]</P>
+		<LI><P STYLE="margin-bottom: 0in">Tweak options in config.json
+		below as desired using Notepad:</P>
+	</OL>
+</OL>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">{</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  &quot;type&quot;:
+&quot;network&quot;,  &quot;version&quot;: &quot;1.0&quot;,  &quot;data&quot;:
+&quot;data.json&quot;,</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  &quot;logo&quot;:
+{</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    &quot;text&quot;:
+&quot;&quot;,</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    &quot;file&quot;:
+&quot;&quot;, &lt;!--Link to logo graphic if you have one--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    &quot;link&quot;:
+&quot;&quot;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  },</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  &quot;text&quot;:
+{</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    &quot;title&quot;:
+&quot;&quot;, &lt;!--Chart title--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    &quot;more&quot;:
+&quot;&quot;, &lt;!--Long description of chart in pop-up box--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    &quot;intro&quot;:
+&quot;&quot; &lt;!--Short description of chart--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  },</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  &quot;legend&quot;:
+{</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    &quot;edgeLabel&quot;:
+&quot;&quot;,&lt;!--What edges represent--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    &quot;colorLabel&quot;:
+&quot;&quot;, &lt;!--What color of nodes represents--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    &quot;nodeLabel&quot;:
+&quot;&quot; &lt;!--What nodes represent--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  },</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  &quot;features&quot;:
+{</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    &quot;search&quot;:
+false, &lt;!--Include search?--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">   
+&quot;groupSelectorAttribute&quot;: false,    &quot;hoverBehavior&quot;:
+&quot;dim&quot;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  },</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in"> 
+&quot;informationPanel&quot;: {</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">   
+&quot;imageAttribute&quot;: &quot;Label&quot;,   
+&quot;groupByEdgeDirection&quot;: false</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  },</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  &quot;sigma&quot;:
+{</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">   
+&quot;graphProperties&quot;: {</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">     
+&quot;minEdgeSize&quot;: 15, &lt;!--Adjusts minimum line width--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">     
+&quot;maxNodeSize&quot;: 30, &lt;!--Adjusts maximum node size--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">     
+&quot;maxEdgeSize&quot;: 15, &lt;!--Adjusts maximum line width--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">     
+&quot;minNodeSize&quot;: 30    }, &lt;!--Adjusts minimum node size--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">   
+&quot;drawingProperties&quot;: {</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">     
+&quot;labelThreshold&quot;: 0, &lt;!--Minimum node size with label;
+&ldquo;0&rdquo; shows all labels--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">     
+&quot;hoverFontStyle&quot;: &quot;bold&quot;,      &quot;defaultEdgeType&quot;:
+&quot;curve&quot;,      &quot;defaultLabelColor&quot;: &quot;#000&quot;,</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">     
+&quot;defaultLabelHoverColor&quot;: &quot;#fff&quot;,</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">     
+&quot;defaultLabelSize&quot;: 20, &lt;!--Font size of labels--&gt;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">     
+&quot;activeFontStyle&quot;: &quot;bold&quot;,      &quot;fontStyle&quot;:
+&quot;bold&quot;,     
+</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">     
+&quot;defaultHoverLabelBGColor&quot;: &quot;#002147&quot;,     
+&quot;defaultLabelBGColor&quot;: &quot;#ddd&quot;</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    },</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">   
+&quot;mouseProperties&quot;: {</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">      &quot;minRatio&quot;:
+0.75,      &quot;maxRatio&quot;: 20</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">    }</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">  }</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in">}</P>
+</BODY>
+</HTML>
