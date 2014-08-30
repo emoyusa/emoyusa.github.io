@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "text": "Emoyusa",
+    "file": "",
+    "link": "www"
+  },
+  "text": {
+    "title": "Chronic Conditions and PQIs",
+    "more": "Node size indicates frequency of chronic conditions and PQIs among all preventable hospitalizations.  Edge width indicates frequency of association between a chronic condition and a PQI.",
+    "intro": "Edges show association between chronic conditions and preventable hospitalizations"
+  },
+  "legend": {
+    "edgeLabel": "Hospitalizations",
+    "colorLabel": "",
+    "nodeLabel": "Conditions"
+  },
+  "features": {
+    "search": false,
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "imageAttribute": "Label",
+    "groupByEdgeDirection": false
+  },
+  "sigma": {
+    "graphProperties": {
+      "minEdgeSize": 5,
+      "maxNodeSize": 25,
+      "maxEdgeSize": 25,
+      "minNodeSize": 5
+    },
+    "drawingProperties": {
+      "labelThreshold": 10,
+      "hoverFontStyle": "bold",
+      "defaultEdgeType": "curve",
+      "defaultLabelColor": "#000",
+      "defaultLabelHoverColor": "#fff",
+      "defaultLabelSize": 14,
+      "activeFontStyle": "bold",
+      "fontStyle": "bold",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd"
+    },
+    "mouseProperties": {
+      "minRatio": 0.75,
+      "maxRatio": 20
+    }
+  }
+}
